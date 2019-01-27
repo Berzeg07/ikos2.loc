@@ -30,26 +30,26 @@
 				<div class="header-fixed">
 					<div class="header-container">
 						<div class="header-fixed__left">
-							<ul class="main-menu">
-								<li><a href="#">Restorāns</a>
-								</li>
-								<li><a href="#">Ēdienkarte</a>
-								</li>
-								<li><a class="modal-show" href="#">Rezervēšana</a>
-								</li>
-							</ul>
+							<?php
+								wp_nav_menu( array(
+									'menu_class'=>'main-menu',
+								    'theme_location'=>'desctopMenu'
+								) );
+							?>
 						</div>
 						<div class="header-fixed__right">
-							<ul class="main-menu">
-								<li><a href="#">Kontakti</a>
-								</li>
-							</ul>
-							<ul class="main-menu lang-menu">
-								<li><a href="#">LV</a>
-								</li>
-								<li><a href="#">RU</a>
-								</li>
-							</ul>
+							<?php
+								wp_nav_menu( array(
+									'menu_class'=>'main-menu',
+								    'theme_location'=>'desctopMenuConact'
+								) );
+							?>
+							<?php
+								wp_nav_menu( array(
+									'menu_class'=>'main-menu lang-menu',
+								    'theme_location'=>'langMenu'
+								) );
+							?>
 						</div>
 					</div>
 				</div>
@@ -57,20 +57,16 @@
 					<div class="close">
 						<button class="close-btn" type="button"></button>
 					</div>
-					<ul class="mobile-menu">
-						<li><a href="#">Restorāns</a>
-						</li>
-						<li><a href="#">Ēdienkarte</a>
-						</li>
-						<li><a class="modal-show" href="#">Rezervēšana</a>
-						</li>
-						<li><a href="#">Kontakti</a>
-						</li>
-					</ul>
-					<ul class="mobile-menu">
-						<li><a href="#">LV</a>
-						</li>
-						<li><a href="#">RU</a>
-						</li>
-					</ul>
+					<?php
+						wp_nav_menu( array(
+							'menu_class'=>'mobile-menu',
+							'theme_location'=>'mobileMenu'
+						) );
+					?>
+					<?php
+						wp_nav_menu( array(
+							'menu_class'=>'mobile-menu',
+							'theme_location'=>'langMenu'
+						) );
+					?>
 				</nav>

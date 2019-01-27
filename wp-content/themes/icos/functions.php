@@ -51,6 +51,8 @@ if (function_exists('add_theme_support'))
 	'admin-preview-callback'	=> $adminpreview_cb
     ));*/
 
+
+
     // Enables post and comment RSS feed links to head
     add_theme_support('automatic-feed-links');
 
@@ -63,29 +65,49 @@ if (function_exists('add_theme_support'))
 \*------------------------------------*/
 
 // HTML5 Blank navigation
-function html5blank_nav()
-{
-	wp_nav_menu(
-	array(
-		'theme_location'  => 'header-menu',
-		'menu'            => '',
-		'container'       => 'div',
-		'container_class' => 'menu-{menu slug}-container',
-		'container_id'    => '',
-		'menu_class'      => 'menu',
-		'menu_id'         => '',
-		'echo'            => true,
-		'fallback_cb'     => 'wp_page_menu',
-		'before'          => '',
-		'after'           => '',
-		'link_before'     => '',
-		'link_after'      => '',
-		'items_wrap'      => '<ul>%3$s</ul>',
-		'depth'           => 0,
-		'walker'          => ''
-		)
-	);
-}
+// function html5blank_nav()
+// {
+// 	wp_nav_menu(
+// 	array(
+// 		'theme_location'  => 'header-menu',
+// 		'menu'            => '',
+// 		'container'       => 'div',
+// 		'container_class' => 'menu-{menu slug}-container',
+// 		'container_id'    => '',
+// 		'menu_class'      => 'menu',
+// 		'menu_id'         => '',
+// 		'echo'            => true,
+// 		'fallback_cb'     => 'wp_page_menu',
+// 		'before'          => '',
+// 		'after'           => '',
+// 		'link_before'     => '',
+// 		'link_after'      => '',
+// 		'items_wrap'      => '<ul>%3$s</ul>',
+// 		'depth'           => 0,
+// 		'walker'          => ''
+// 		)
+// 	);
+// }
+
+register_nav_menus(array(
+	'desctopMenu'    => 'Десктопное меню',
+    'desctopMenuConact'    => 'Десктопное меню - Контакты',
+	'mobileMenu' => 'Мобильное меню',
+    'langMenu' => 'Смена языка'
+));
+
+// register_nav_menu('menu', 'Меню в шапке');
+// function register_theme_menus() {
+//   register_nav_menus(
+//     array(
+//       'landing-menu'	=> __('Landing Menu'),
+//       'blog-menu'	=> __('Blog Menu')
+//     )
+//   );
+// }
+// add_action('init', 'register_theme_menus');
+
+
 
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
 function my_scripts_method() {

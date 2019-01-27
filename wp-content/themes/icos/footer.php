@@ -71,16 +71,10 @@
 							<br>libero nulla fermentum</p>
 					</div>
 				</div>
-
-				<!-- <script src="libs/jquery/jquery.min.js"></script>
-				<script src="libs/parallax/parallax.min.js"></script> -->
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
-				<!-- <script src="libs/selectric/jquery.selectric.min.js"></script>
-				<script src="js/common.js"></script> -->
-			</div>
-			</div>
+				</div>
+				</div>
 			</body>
-
 		</html>
 		<?php wp_footer(); ?>
 	</body>

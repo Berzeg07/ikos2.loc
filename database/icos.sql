@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Янв 27 2019 г., 19:41
+-- Время создания: Янв 27 2019 г., 21:20
 -- Версия сервера: 5.6.41
 -- Версия PHP: 5.5.38
 
@@ -217,7 +217,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (109, 'widget_tag_cloud', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (110, 'widget_nav_menu', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (111, 'widget_custom_html', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
-(112, 'cron', 'a:5:{i:1548608099;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1548629699;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1548672912;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1548693529;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
+(112, 'cron', 'a:5:{i:1548615299;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1548629699;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1548672912;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1548693529;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
 (113, 'theme_mods_twentynineteen', 'a:2:{s:18:\"custom_css_post_id\";i:-1;s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1548589990;s:4:\"data\";a:2:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}}}}', 'yes'),
 (121, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/ru_RU/wordpress-5.0.3.zip\";s:6:\"locale\";s:5:\"ru_RU\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/ru_RU/wordpress-5.0.3.zip\";s:10:\"no_content\";b:0;s:11:\"new_bundled\";b:0;s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.0.3\";s:7:\"version\";s:5:\"5.0.3\";s:11:\"php_version\";s:5:\"5.2.4\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.0\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1548586508;s:15:\"version_checked\";s:5:\"5.0.3\";s:12:\"translations\";a:0:{}}', 'no'),
 (122, '_site_transient_update_themes', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1548589966;s:7:\"checked\";a:4:{s:4:\"icos\";s:0:\"\";s:14:\"twentynineteen\";s:3:\"1.2\";s:15:\"twentyseventeen\";s:3:\"2.0\";s:13:\"twentysixteen\";s:3:\"1.8\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:1:{i:0;a:7:{s:4:\"type\";s:5:\"theme\";s:4:\"slug\";s:14:\"twentynineteen\";s:8:\"language\";s:5:\"ru_RU\";s:7:\"version\";s:3:\"1.2\";s:7:\"updated\";s:19:\"2019-01-09 23:39:31\";s:7:\"package\";s:78:\"https://downloads.wordpress.org/translation/theme/twentynineteen/1.2/ru_RU.zip\";s:10:\"autoupdate\";b:1;}}}', 'no'),
@@ -244,9 +244,10 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (141, '_site_transient_browser_0237e97ea55901a8d48e685b49043e18', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:12:\"71.0.3578.98\";s:8:\"platform\";s:7:\"Windows\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
 (142, '_site_transient_timeout_theme_roots', '1548591765', 'no'),
 (143, '_site_transient_theme_roots', 'a:4:{s:4:\"icos\";s:7:\"/themes\";s:14:\"twentynineteen\";s:7:\"/themes\";s:15:\"twentyseventeen\";s:7:\"/themes\";s:13:\"twentysixteen\";s:7:\"/themes\";}', 'no'),
-(146, 'theme_mods_icos', 'a:2:{s:18:\"custom_css_post_id\";i:-1;s:18:\"nav_menu_locations\";a:0:{}}', 'yes'),
+(146, 'theme_mods_icos', 'a:2:{s:18:\"custom_css_post_id\";i:-1;s:18:\"nav_menu_locations\";a:5:{s:11:\"desctopMenu\";i:5;s:17:\"desctopMenuConact\";i:6;s:8:\"langMenu\";i:7;s:11:\"header-menu\";i:0;s:10:\"mobileMenu\";i:8;}}', 'yes'),
 (147, 'current_theme', '', 'yes'),
-(148, 'theme_switched', '', 'yes');
+(148, 'theme_switched', '', 'yes'),
+(155, 'nav_menu_options', 'a:2:{i:0;b:0;s:8:\"auto_add\";a:0:{}}', 'yes');
 
 -- --------------------------------------------------------
 
@@ -274,8 +275,88 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (6, 3, '_wp_desired_post_slug', 'contacts'),
 (7, 7, '_edit_lock', '1548607027:1'),
 (8, 7, '_wp_page_template', 'template-contacts.php'),
-(9, 9, '_edit_lock', '1548607236:1'),
-(10, 9, '_wp_page_template', 'template-menu.php');
+(9, 9, '_edit_lock', '1548609959:1'),
+(10, 9, '_wp_page_template', 'template-menu.php'),
+(11, 11, '_menu_item_type', 'post_type'),
+(12, 11, '_menu_item_menu_item_parent', '0'),
+(13, 11, '_menu_item_object_id', '9'),
+(14, 11, '_menu_item_object', 'page'),
+(15, 11, '_menu_item_target', ''),
+(16, 11, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(17, 11, '_menu_item_xfn', ''),
+(18, 11, '_menu_item_url', ''),
+(20, 12, '_menu_item_type', 'custom'),
+(21, 12, '_menu_item_menu_item_parent', '0'),
+(22, 12, '_menu_item_object_id', '12'),
+(23, 12, '_menu_item_object', 'custom'),
+(24, 12, '_menu_item_target', ''),
+(25, 12, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(26, 12, '_menu_item_xfn', ''),
+(27, 12, '_menu_item_url', 'http://index.php'),
+(29, 13, '_menu_item_type', 'custom'),
+(30, 13, '_menu_item_menu_item_parent', '0'),
+(31, 13, '_menu_item_object_id', '13'),
+(32, 13, '_menu_item_object', 'custom'),
+(33, 13, '_menu_item_target', ''),
+(34, 13, '_menu_item_classes', 'a:1:{i:0;s:10:\"modal-show\";}'),
+(35, 13, '_menu_item_xfn', ''),
+(36, 13, '_menu_item_url', '#'),
+(38, 14, '_menu_item_type', 'post_type'),
+(39, 14, '_menu_item_menu_item_parent', '0'),
+(40, 14, '_menu_item_object_id', '7'),
+(41, 14, '_menu_item_object', 'page'),
+(42, 14, '_menu_item_target', ''),
+(43, 14, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(44, 14, '_menu_item_xfn', ''),
+(45, 14, '_menu_item_url', ''),
+(47, 15, '_menu_item_type', 'custom'),
+(48, 15, '_menu_item_menu_item_parent', '0'),
+(49, 15, '_menu_item_object_id', '15'),
+(50, 15, '_menu_item_object', 'custom'),
+(51, 15, '_menu_item_target', ''),
+(52, 15, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(53, 15, '_menu_item_xfn', ''),
+(54, 15, '_menu_item_url', '#'),
+(56, 16, '_menu_item_type', 'custom'),
+(57, 16, '_menu_item_menu_item_parent', '0'),
+(58, 16, '_menu_item_object_id', '16'),
+(59, 16, '_menu_item_object', 'custom'),
+(60, 16, '_menu_item_target', ''),
+(61, 16, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(62, 16, '_menu_item_xfn', ''),
+(63, 16, '_menu_item_url', '#'),
+(65, 17, '_menu_item_type', 'post_type'),
+(66, 17, '_menu_item_menu_item_parent', '0'),
+(67, 17, '_menu_item_object_id', '9'),
+(68, 17, '_menu_item_object', 'page'),
+(69, 17, '_menu_item_target', ''),
+(70, 17, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(71, 17, '_menu_item_xfn', ''),
+(72, 17, '_menu_item_url', ''),
+(74, 18, '_menu_item_type', 'post_type'),
+(75, 18, '_menu_item_menu_item_parent', '0'),
+(76, 18, '_menu_item_object_id', '7'),
+(77, 18, '_menu_item_object', 'page'),
+(78, 18, '_menu_item_target', ''),
+(79, 18, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(80, 18, '_menu_item_xfn', ''),
+(81, 18, '_menu_item_url', ''),
+(83, 19, '_menu_item_type', 'custom'),
+(84, 19, '_menu_item_menu_item_parent', '0'),
+(85, 19, '_menu_item_object_id', '19'),
+(86, 19, '_menu_item_object', 'custom'),
+(87, 19, '_menu_item_target', ''),
+(88, 19, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(89, 19, '_menu_item_xfn', ''),
+(90, 19, '_menu_item_url', '#'),
+(92, 20, '_menu_item_type', 'custom'),
+(93, 20, '_menu_item_menu_item_parent', '0'),
+(94, 20, '_menu_item_object_id', '20'),
+(95, 20, '_menu_item_object', 'custom'),
+(96, 20, '_menu_item_target', ''),
+(97, 20, '_menu_item_classes', 'a:1:{i:0;s:10:\"modal-show\";}'),
+(98, 20, '_menu_item_xfn', ''),
+(99, 20, '_menu_item_url', '#');
 
 -- --------------------------------------------------------
 
@@ -323,7 +404,17 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (7, 1, '2019-01-27 19:39:02', '2019-01-27 16:39:02', '', 'Контакты', '', 'publish', 'closed', 'closed', '', '%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d1%8b', '', '', '2019-01-27 19:39:02', '2019-01-27 16:39:02', '', 0, 'http://ikos2.loc/?page_id=7', 0, 'page', '', 0),
 (8, 1, '2019-01-27 19:39:02', '2019-01-27 16:39:02', '', 'Контакты', '', 'inherit', 'closed', 'closed', '', '7-revision-v1', '', '', '2019-01-27 19:39:02', '2019-01-27 16:39:02', '', 7, 'http://ikos2.loc/2019/01/27/7-revision-v1/', 0, 'revision', '', 0),
 (9, 1, '2019-01-27 19:40:25', '2019-01-27 16:40:25', '', 'Меню', '', 'publish', 'closed', 'closed', '', '%d0%bc%d0%b5%d0%bd%d1%8e', '', '', '2019-01-27 19:40:25', '2019-01-27 16:40:25', '', 0, 'http://ikos2.loc/?page_id=9', 0, 'page', '', 0),
-(10, 1, '2019-01-27 19:40:25', '2019-01-27 16:40:25', '', 'Меню', '', 'inherit', 'closed', 'closed', '', '9-revision-v1', '', '', '2019-01-27 19:40:25', '2019-01-27 16:40:25', '', 9, 'http://ikos2.loc/2019/01/27/9-revision-v1/', 0, 'revision', '', 0);
+(10, 1, '2019-01-27 19:40:25', '2019-01-27 16:40:25', '', 'Меню', '', 'inherit', 'closed', 'closed', '', '9-revision-v1', '', '', '2019-01-27 19:40:25', '2019-01-27 16:40:25', '', 9, 'http://ikos2.loc/2019/01/27/9-revision-v1/', 0, 'revision', '', 0),
+(11, 1, '2019-01-27 20:47:48', '2019-01-27 17:47:48', '', 'Ēdienkarte', '', 'publish', 'closed', 'closed', '', '11', '', '', '2019-01-27 20:57:05', '2019-01-27 17:57:05', '', 0, 'http://ikos2.loc/?p=11', 2, 'nav_menu_item', '', 0),
+(12, 1, '2019-01-27 20:52:53', '2019-01-27 17:52:53', '', 'Restorāns', '', 'publish', 'closed', 'closed', '', 'restorans', '', '', '2019-01-27 20:57:04', '2019-01-27 17:57:04', '', 0, 'http://ikos2.loc/?p=12', 1, 'nav_menu_item', '', 0),
+(13, 1, '2019-01-27 20:52:53', '2019-01-27 17:52:53', '', 'Rezervēšana', '', 'publish', 'closed', 'closed', '', 'rezervesana', '', '', '2019-01-27 20:57:05', '2019-01-27 17:57:05', '', 0, 'http://ikos2.loc/?p=13', 3, 'nav_menu_item', '', 0),
+(14, 1, '2019-01-27 21:06:40', '2019-01-27 18:06:40', ' ', '', '', 'publish', 'closed', 'closed', '', '14', '', '', '2019-01-27 21:06:40', '2019-01-27 18:06:40', '', 0, 'http://ikos2.loc/?p=14', 1, 'nav_menu_item', '', 0),
+(15, 1, '2019-01-27 21:10:10', '2019-01-27 18:10:10', '', 'LV', '', 'publish', 'closed', 'closed', '', 'lv', '', '', '2019-01-27 21:10:10', '2019-01-27 18:10:10', '', 0, 'http://ikos2.loc/?p=15', 1, 'nav_menu_item', '', 0),
+(16, 1, '2019-01-27 21:10:10', '2019-01-27 18:10:10', '', 'RU', '', 'publish', 'closed', 'closed', '', 'ru', '', '', '2019-01-27 21:10:10', '2019-01-27 18:10:10', '', 0, 'http://ikos2.loc/?p=16', 2, 'nav_menu_item', '', 0),
+(17, 1, '2019-01-27 21:19:14', '2019-01-27 18:19:14', '', 'Ēdienkarte', '', 'publish', 'closed', 'closed', '', 'edienkarte', '', '', '2019-01-27 21:19:14', '2019-01-27 18:19:14', '', 0, 'http://ikos2.loc/?p=17', 2, 'nav_menu_item', '', 0),
+(18, 1, '2019-01-27 21:19:14', '2019-01-27 18:19:14', '', 'Kontakti', '', 'publish', 'closed', 'closed', '', 'kontakti', '', '', '2019-01-27 21:19:14', '2019-01-27 18:19:14', '', 0, 'http://ikos2.loc/?p=18', 4, 'nav_menu_item', '', 0),
+(19, 1, '2019-01-27 21:19:14', '2019-01-27 18:19:14', '', 'Restorāns', '', 'publish', 'closed', 'closed', '', 'restorans-2', '', '', '2019-01-27 21:19:14', '2019-01-27 18:19:14', '', 0, 'http://ikos2.loc/?p=19', 1, 'nav_menu_item', '', 0),
+(20, 1, '2019-01-27 21:19:14', '2019-01-27 18:19:14', '', 'Rezervēšana', '', 'publish', 'closed', 'closed', '', 'rezervesana-2', '', '', '2019-01-27 21:19:14', '2019-01-27 18:19:14', '', 0, 'http://ikos2.loc/?p=20', 3, 'nav_menu_item', '', 0);
 
 -- --------------------------------------------------------
 
@@ -356,7 +447,11 @@ CREATE TABLE `wp_terms` (
 --
 
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
-(1, 'Без рубрики', '%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8', 0);
+(1, 'Без рубрики', '%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8', 0),
+(5, 'Десктоп меню', '%d0%b4%d0%b5%d1%81%d0%ba%d1%82%d0%be%d0%bf-%d0%bc%d0%b5%d0%bd%d1%8e', 0),
+(6, 'Контакты', '%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d1%8b', 0),
+(7, 'Смена языка', '%d1%81%d0%bc%d0%b5%d0%bd%d0%b0-%d1%8f%d0%b7%d1%8b%d0%ba%d0%b0', 0),
+(8, 'Мобильное меню', '%d0%bc%d0%be%d0%b1%d0%b8%d0%bb%d1%8c%d0%bd%d0%be%d0%b5-%d0%bc%d0%b5%d0%bd%d1%8e', 0);
 
 -- --------------------------------------------------------
 
@@ -375,7 +470,17 @@ CREATE TABLE `wp_term_relationships` (
 --
 
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
-(1, 1, 0);
+(1, 1, 0),
+(11, 5, 0),
+(12, 5, 0),
+(13, 5, 0),
+(14, 6, 0),
+(15, 7, 0),
+(16, 7, 0),
+(17, 8, 0),
+(18, 8, 0),
+(19, 8, 0),
+(20, 8, 0);
 
 -- --------------------------------------------------------
 
@@ -397,7 +502,11 @@ CREATE TABLE `wp_term_taxonomy` (
 --
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
-(1, 1, 'category', '', 0, 1);
+(1, 1, 'category', '', 0, 1),
+(5, 5, 'nav_menu', '', 0, 3),
+(6, 6, 'nav_menu', '', 0, 1),
+(7, 7, 'nav_menu', '', 0, 2),
+(8, 8, 'nav_menu', '', 0, 4);
 
 -- --------------------------------------------------------
 
@@ -434,7 +543,9 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (15, 1, 'show_welcome_panel', '1'),
 (16, 1, 'session_tokens', 'a:2:{s:64:\"137bde9544d2e4b3bf24c72dcc788d5f6647a4055cf7f6322f43c9c06fa55bc0\";a:4:{s:10:\"expiration\";i:1549796111;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:130:\"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36 OPR/58.0.3135.47\";s:5:\"login\";i:1548586511;}s:64:\"187d9bfe831168c3ac4d3c90b31d94d6e9b8a6f90577f148279d995299b0fd9f\";a:4:{s:10:\"expiration\";i:1549796152;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:108:\"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36\";s:5:\"login\";i:1548586552;}}'),
 (17, 1, 'wp_dashboard_quick_press_last_post_id', '4'),
-(18, 1, 'community-events-location', 'a:1:{s:2:\"ip\";s:9:\"127.0.0.0\";}');
+(18, 1, 'community-events-location', 'a:1:{s:2:\"ip\";s:9:\"127.0.0.0\";}'),
+(19, 1, 'managenav-menuscolumnshidden', 'a:4:{i:0;s:11:\"link-target\";i:1;s:15:\"title-attribute\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";}'),
+(20, 1, 'metaboxhidden_nav-menus', 'a:2:{i:0;s:25:\"add-post-type-html5-blank\";i:1;s:12:\"add-post_tag\";}');
 
 -- --------------------------------------------------------
 
@@ -591,19 +702,19 @@ ALTER TABLE `wp_links`
 -- AUTO_INCREMENT для таблицы `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=154;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=157;
 
 --
 -- AUTO_INCREMENT для таблицы `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
 -- AUTO_INCREMENT для таблицы `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT для таблицы `wp_termmeta`
@@ -615,19 +726,19 @@ ALTER TABLE `wp_termmeta`
 -- AUTO_INCREMENT для таблицы `wp_terms`
 --
 ALTER TABLE `wp_terms`
-  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT для таблицы `wp_term_taxonomy`
 --
 ALTER TABLE `wp_term_taxonomy`
-  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT для таблицы `wp_usermeta`
 --
 ALTER TABLE `wp_usermeta`
-  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT для таблицы `wp_users`
