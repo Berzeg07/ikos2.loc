@@ -1,25 +1,35 @@
+<?php
+/*
+ * Template name: Главная
+ */
+?>
 <?php get_header(); ?>
+			<div class="main-banner parallax-window" data-parallax="scroll" data-speed="0.7" data-image-src="<?php the_field('картинка_на_главном_баннере'); ?>">
+				<h2 class="main-title"><?php the_field('заголовок_на_главном_баннере'); ?></h2>
 
-			<div class="main-banner parallax-window" data-parallax="scroll" data-speed="0.7" data-image-src="<?php echo get_template_directory_uri(); ?>/img/header-bg.jpg">
-				<h2 class="main-title">Mediterranean <br>cuisine with Nordic taste accents</h2>
 			</div>
 			<div class="service service-01 container">
 				<div class="service-item service-text">
-					<p>Laipni lūdzam Vidusjūras restorānā pašā Rīgas centrā - Ikos Olivia. Atrodas unikālajā jūgendstila rajonā, kas iekļauts UNESCO pasaules mantojuma sarakstā. Šeit, gremdējoties Vidusjūras saulainajā atmosfērā un baudot burvīgu mūziku, un unikālus mākslas
-						un interjera dizaina elementus, jūs aizbēgsiet no burzmas un pilsētas ritma ikdienas rūpēm.</p>
+					<p>
+						<?php the_field('текст-1'); ?>
+					</p>
 				</div>
 				<div class="service-item service-img">
 					<div class="service-item__img">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/service-1.1.jpg">
+						<img src="<?php the_field('изображение-1'); ?>">
 					</div>
 					<div class="service-item__img">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/service-1.2.jpg">
+						<img src="<?php the_field('изображение-2'); ?>">
 					</div>
 				</div>
 				<div class="service-item service-text">
-					<p>Restorāns Ikos Olivia apvieno labākās Vidusjūras reģiona valstu gastronomiskās tradīcijas un priecēs viesus un gardēžus ar neparastu itāļu, grieķu, franču un spāņu virtuves daudzveidību, pievienojot ēdieniem skandināvisku pieskaņu un papildinot to
-						ar oriģinālu vīnu kolekciju no dažādiem reģioniem.</p>
-					<div class="service-link"><a href="#">Skatit ēdienkarte</a>
+					<p>
+						<?php the_field('текст-2'); ?>
+					</p>
+					<div class="service-link">
+						<a href="#">
+							<?php the_field('ссылка-1'); ?>
+						</a>
 					</div>
 				</div>
 			</div>
