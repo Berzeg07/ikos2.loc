@@ -6,11 +6,52 @@
 
 <?php get_header(); ?>
 
-	<div class="main-banner menu-banner parallax-window" data-parallax="scroll" data-speed="0.7" data-image-src="<?php echo get_template_directory_uri(); ?>/img/menu-banner.jpg">
-		<p>Bagātas gastronomiskās tradīcijas</p>
-		<h2 class="main-title">Ēdienkarte</h2>
+	<div class="main-banner menu-banner parallax-window" data-parallax="scroll" data-speed="0.7" data-image-src="<?php the_field('баннер_меню'); ?>">
+		<p>
+			<?php the_field('текст-баннер-меню'); ?>
+		</p>
+		<h2 class="main-title">
+			<?php the_field('заголовок-баннер-меню'); ?>
+		</h2>
 	</div>
+
 	<div class="menuList container">
+		<div class="menuList-title">
+			<p>
+				Uzkodas
+			</p>
+		</div>
+
+		<?php
+			$args = array(
+				'post_type' => 'menu',
+				'cat' => '9'
+			);
+		?>
+
+			<?php $wp_query = new WP_Query($args); ?>
+			<?php while ( $wp_query->have_posts() ) { ?>
+			<?php $wp_query->the_post(); ?>
+
+			<div class="menuList-item">
+				<div class="menuList-item_name">
+					<span><?php the_title();?></span>
+					<p>
+						<!-- Zobenzivs, jūras veltes, avokado un batātes krēms ar aromātisku mērci -->
+						<?php the_field('короткое_описание_блюда'); ?>
+					</p>
+				</div>
+				<div class="menuList-item_price">
+					<span>
+
+						<!-- €12,45 -->
+						&#8364;<?php the_field('цена_блюда'); ?>
+					</span>
+				</div>
+			</div>
+		<?php }?>
+	</div>
+	<!-- <div class="menuList container">
 		<div class="menuList-title">
 			<p>Uzkodas</p>
 		</div>
@@ -44,11 +85,13 @@
 		<div class="menuList-item">
 			<div class="menuList-item_name"><span>Nicoise</span>
 				<p>
-					Sparģeļi, krāsnī cepts kartupelis, avokado, lēni gatavota ola, medus mērcepasniedzam ar karsti kūpinātu Norvēģijas fjordu foreli</p>
+					Sparģeļi, krāsnī cepts kartupelis, avokado, lēni gatavota ola, medus mērcepasniedzam ar karsti kūpinātu Norvēģijas fjordu foreli
+				</p>
 			</div>
 			<div class="menuList-item_price"><span>€9,95</span>
 			</div>
 		</div>
+
 		<div class="menuList-title">
 			<p>Karstas uzkodas</p>
 		</div>
@@ -80,12 +123,15 @@
 			<div class="menuList-item_price"><span>€16,75</span>
 			</div>
 		</div>
+		 -->
 	</div>
 	<div class="gallery-wrap">
 		<div class="swiper-container">
 			<div class="slider-line"></div>
 			<div class="swiper-wrapper">
-				<div class="swiper-slide">
+				<?php echo do_shortcode('[nggallery id="'.get_field('gallery-menu').'" template="gallery-3"]'); ?>
+
+				<!-- <div class="swiper-slide">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/menu-slide.jpg">
 				</div>
 				<div class="swiper-slide">
@@ -99,7 +145,7 @@
 				</div>
 				<div class="swiper-slide">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/menu-slide.jpg">
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>

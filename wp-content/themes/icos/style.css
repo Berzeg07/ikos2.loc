@@ -276,6 +276,23 @@ textarea {
   pointer-events: auto;
 }
 
+.logo-desctop{
+    display: none;
+    transition: 1s;
+}
+@media (min-width: 768px) {
+    .logo-desctop{
+        display: block;
+        margin-right: 40px;
+    }
+}
+@media (min-width: 992px) {
+    .logo-desctop{
+        margin-right: 100px;
+    }
+}
+
+
 @media (min-width: 767px) {
   .top-logobox {
     padding-top: 21px;
@@ -285,6 +302,15 @@ textarea {
 @media (max-width: 767px) {
   .top-logobox {
     margin-bottom: 62px;
+  }
+}
+
+@media (min-width: 768px) {
+    .top-logobox {
+        height: 150px;
+    }
+  .top-logobox a img {
+    display: none;
   }
 }
 
@@ -307,17 +333,27 @@ textarea {
   left: 0;
   width: 100%;
   z-index: 100;
-  padding-top: 72px;
+  padding-top: 20px;
+  transition: 1.5s;
+  background: rgba(255,255,255,0);
+  /*padding-top: 72px;*/
 }
+
+
 
 .header-fixed a {
   font-size: 15px;
   color: #3D3D3D;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header-fixed {
     display: none;
+  }
+}
+@media (min-width: 768px) {
+  .header-fixed {
+    display: block;
   }
 }
 

@@ -12,6 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
+
 		<?php wp_head(); ?>
 
 
@@ -22,13 +23,14 @@
 			<div class="content">
 				<div class="burger-menu"><span></span>
 				</div>
-				<div class="top-logobox">
+				<div class="top-logobox logo-mobile">
 					<a href="/">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/ikosolivia_logo.svg">
 					</a>
 				</div>
 				<div class="header-fixed">
 					<div class="header-container">
+
 						<div class="header-fixed__left">
 							<?php
 								wp_nav_menu( array(
@@ -37,6 +39,13 @@
 								) );
 							?>
 						</div>
+
+						<div class="logo-desctop">
+							<a href="/">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/ikosolivia_logo.svg">
+							</a>
+						</div>
+
 						<div class="header-fixed__right">
 							<?php
 								wp_nav_menu( array(
@@ -51,6 +60,7 @@
 								) );
 							?>
 						</div>
+
 					</div>
 				</div>
 				<nav class="main-nav">

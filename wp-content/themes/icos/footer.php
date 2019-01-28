@@ -16,7 +16,7 @@
 						<div class="modal-close">
 							<button class="close-modal" type="button">
 								<svg>
-									<use xlink:href="img/sprites.svg#close-modal"></use>
+									<use xlink:href="<?php echo get_template_directory_uri();?>/img/sprites.svg#close-modal"></use>
 								</svg>
 							</button>
 						</div>
