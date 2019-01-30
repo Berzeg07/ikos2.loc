@@ -1,6 +1,13 @@
 jQuery(function($) {
     $(document).ready(function() {
 
+        $(window).scroll(function(){
+          var sticky = $('.header-nofixed'),
+              scroll = $(window).scrollTop();
+
+          if (scroll >= 30) sticky.addClass('header-fixed');
+          else sticky.removeClass('header-fixed');
+        });
         // Mobile menu =============================================================
         $(function() {
             function burger() {
@@ -23,12 +30,12 @@ jQuery(function($) {
         // fixed menu ==========================================================
         var $wrapper = $(document.querySelector('.content'));
         var $logo = $wrapper.find('.logo-desctop');
-        var $header = $wrapper.find('.header-fixed');
+        var $header = $wrapper.find('.header-nofixed');
         var $window = $(window);
         let onScroll = () => {
             var top = parseInt($window.scrollTop());
             if (top > 0) {
-                $($logo).css('transform','scale(0.8)');
+                $($logo).css('transform','scale(0.6)');
             } else {
                 $($logo).css('transform','scale(1)');
             }
@@ -40,6 +47,8 @@ jQuery(function($) {
         };
         onScroll();
         $window.scroll(onScroll);
+
+
 
 
         // send message ============================================================

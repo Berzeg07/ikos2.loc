@@ -307,6 +307,7 @@ textarea {
 
 @media (min-width: 768px) {
     .top-logobox {
+        display: none;
         height: 150px;
     }
   .top-logobox a img {
@@ -326,18 +327,13 @@ textarea {
     margin-left: 1px;
   }
 }
-
-.header-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  padding-top: 20px;
-  transition: 1.5s;
-  background: rgba(255,255,255,0);
-  /*padding-top: 72px;*/
+.header-nofixed{
+  padding: 20px 0px;
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
+
 
 
 
@@ -353,8 +349,23 @@ textarea {
 }
 @media (min-width: 768px) {
   .header-fixed {
-    display: block;
+    display: flex;
+    height: 150px;
   }
+}
+
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  z-index: 100;
+  //padding-top: 20px;
+ transition: 1s;
+  background: rgba(255,255,255,0);
+  background: #fff;
+  /*padding-top: 72px;*/
 }
 
 .header-fixed__right {
@@ -525,7 +536,7 @@ textarea {
     height: 18px;
     border: none;
     outline: none;
-    background: url("../img/close.png") no-repeat center;
+    background: url("./img/close.png") no-repeat center;
   }
 }
 
@@ -1018,7 +1029,8 @@ textarea {
 }
 
 .footer-social .footer-social_fb {
-  margin-right: 20px;
+   margin-right: 20px;
+
 }
 
 .gallery-title {
@@ -1578,8 +1590,8 @@ textarea {
   position: relative;
 }
 
-.input-block label.error-input:after {
-  content: "Please fill field";
+.input-block .error-text {
+  //content: "Please fill field";
   color: red;
   font-size: 13px;
   position: absolute;
@@ -1617,7 +1629,9 @@ textarea {
   text-align: center;
   padding-bottom: 52px;
 }
-
+.error-text{
+  //display: none;
+}
 /*======================================
   Selectric
 ======================================*/

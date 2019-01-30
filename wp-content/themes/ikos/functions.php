@@ -65,27 +65,55 @@ if (function_exists('add_theme_support'))
 \*------------------------------------*/
 
 // Регестрируем меню ===========================================================
-register_nav_menus(array(
-	'desctopMenu'    => 'Десктопное меню',
-    'desctopMenuConact'    => 'Десктопное меню - Контакты',
-	'mobileMenu' => 'Мобильное меню',
-    'langMenu' => 'Смена языка'
-));
+// register_nav_menus(array(
+// 	'desctopMenu'    => 'Десктопное меню',
+//     'desctopMenuConact'    => 'Десктопное меню - Контакты',
+// 	'mobileMenu' => 'Мобильное меню',
+//     'langMenu' => 'Смена языка'
+// ));
+
+// HTML5 Blank navigation
+function html5blank_nav()
+{
+    wp_nav_menu(
+    array(
+        'theme_location'  => 'header-menu',
+        'menu'            => '',
+        'container'       => 'div',
+        'container_class' => 'menu-{menu slug}-container',
+        'container_id'    => '',
+        'menu_class'      => 'menu',
+        'menu_id'         => '',
+        'echo'            => true,
+        'fallback_cb'     => 'wp_page_menu',
+        'before'          => '',
+        'after'           => '',
+        'link_before'     => '',
+        'link_after'      => '',
+        'items_wrap'      => '<ul>%3$s</ul>',
+        'depth'           => 0,
+        'walker'          => ''
+        )
+    );
+}
+
 
 // Подключаем jquery ===========================================================
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
 function my_scripts_method() {
 	// отменяем зарегистрированный jQuery
 	// вместо "jquery-core", можно вписать "jquery", тогда будет отменен еще и jquery-migrate
-	wp_deregister_script( 'jquery-core' );
-	wp_register_script( 'jquery-core', '//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
-	wp_enqueue_script( 'jquery' );
+	// wp_deregister_script( 'jquery-core' );
+	// wp_register_script( 'jquery-core', '//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
+	// wp_enqueue_script( 'jquery' );
 }
 
 // Подключаем скрипты ==========================================================
 function html5blank_header_scripts()
 {
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
+
+        wp_enqueue_script( 'jquery', get_template_directory_uri() . '/libs/jquery/jquery-3.3.1.min.js', array(), '20130110', true );    
 
     	wp_register_script('selectric', get_template_directory_uri() . '/libs/selectric/jquery.selectric.min.js', array('jquery'), '3.3.1');
         wp_enqueue_script('selectric'); // Enqueue it!
@@ -119,12 +147,18 @@ function html5blank_conditional_scripts()
 // Register HTML5 Blank Navigation
 function register_html5_menu()
 {
-    register_nav_menus(array( // Using array to specify more menus if needed
-        'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
-        'sidebar-menu' => __('Sidebar Menu', 'html5blank'), // Sidebar Navigation
-        'extra-menu' => __('Extra Menu', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)
-    ));
+    if (function_exists('register_nav_menu'))
+    {
+        register_nav_menu('header_menu', 'Header Menu');
+    }
+
+    // register_nav_menus(array( // Using array to specify more menus if needed
+    //     'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
+    //     'sidebar-menu' => __('Sidebar Menu', 'html5blank'), // Sidebar Navigation
+    //     'extra-menu' => __('Extra Menu', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)
+    // ));
 }
+
 
 // Remove the <div> surrounding the dynamic navigation to cleanup markup
 function my_wp_nav_menu_args($args = '')
@@ -394,21 +428,21 @@ function create_post_type_html5()
 {
     register_taxonomy_for_object_type('category', 'Категория меню'); // Register Taxonomies for Category
     // register_taxonomy_for_object_type('post_tag', 'menu');
-    register_post_type('menu', // Register Custom Post Type
+    register_post_type('menu-type', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('Меню', 'menu'), // Rename these to suit
-            'singular_name' => __('Меню', 'menu'),
-            'add_new' => __('Добавить', 'menu'),
-            'add_new_item' => __('Добавить', 'menu'),
-            'edit' => __('Редактировать', 'menu'),
-            'edit_item' => __('Редактировать', 'menu'),
-            'new_item' => __('Новый', 'menu'),
-            'view' => __('Показать', 'menu'),
-            'view_item' => __('Показать', 'menu'),
-            'search_items' => __('Найти', 'menu'),
-            'not_found' => __('Не найдено', 'menu'),
-            'not_found_in_trash' => __('Нет удаленных', 'menu')
+            'name' => __('Меню', 'menu-type'), // Rename these to suit
+            'singular_name' => __('Меню', 'menu-type'),
+            'add_new' => __('Добавить', 'menu-type'),
+            'add_new_item' => __('Добавить', 'menu-type'),
+            'edit' => __('Редактировать', 'menu-type'),
+            'edit_item' => __('Редактировать', 'menu-type'),
+            'new_item' => __('Новый', 'menu-type'),
+            'view' => __('Показать', 'menu-type'),
+            'view_item' => __('Показать', 'menu-type'),
+            'search_items' => __('Найти', 'menu-type'),
+            'not_found' => __('Не найдено', 'menu-type'),
+            'not_found_in_trash' => __('Нет удаленных', 'menu-type')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages

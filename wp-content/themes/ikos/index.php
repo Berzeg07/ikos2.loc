@@ -27,7 +27,7 @@
 						<?php the_field('текст-2'); ?>
 					</p>
 					<div class="service-link">
-						<a href="#">
+						<a href="/menu">
 							<?php the_field('ссылка-1'); ?>
 						</a>
 					</div>
@@ -45,7 +45,7 @@
 							<?php the_field('блок-2-текст'); ?>
 						</p>
 						<div class="service-link">
-							<a href="#">
+							<a href="#" class="modal-show">
 								<!-- Rezervēt galdiņu -->
 								<?php the_field('блок-2-ссылка'); ?>
 							</a>
@@ -121,7 +121,7 @@
 						<?php the_field('текст-3-команда'); ?>
 					</p>
 					<div class="service-link">
-						<a href="#">
+						<a href="#" class="modal-show">
 							<!-- Rezervēt galdiņu -->
 							<?php the_field('ссылка-команда'); ?>
 						</a>
