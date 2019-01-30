@@ -181,7 +181,11 @@ h1,
 h2 {
   font-family: "caslon";
 }
-
+.h1{
+   line-height: 66px;
+   font-size: 50px;
+   
+}
 .wrapper {
   display: flex;
   flex-direction: column;
