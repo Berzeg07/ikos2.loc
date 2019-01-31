@@ -284,7 +284,7 @@ textarea {
 
 @media (min-width: 768px) {
     .header-wrap {
-        height: 169px;
+        height: 220px;
     }
 }
 
@@ -343,7 +343,7 @@ textarea {
 }
 
 .header-nofixed {
-    padding: 20px 0px;
+    padding: 22px 0px;
     display: flex;
     align-content: center;
     align-items: center;
@@ -943,7 +943,7 @@ textarea {
     }
 }
 
-.ikos-insideImg_wrap,
+/*.ikos-insideImg_wrap,*/
 /*.service-02_wrap {
     max-width: 1280px;
     margin: 0 auto;
