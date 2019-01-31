@@ -1113,9 +1113,9 @@ textarea {
 }
 
 .gallery-wrap {
-    max-width: 1280px;
+    /*max-width: 1280px;*/
     width: 100%;
-    margin-left: auto;
+    /*margin-left: auto;*/
     /*margin: 0 auto;*/
 }
 
