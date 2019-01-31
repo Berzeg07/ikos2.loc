@@ -3,7 +3,7 @@
 				    <?php
 					$args = array(
 						'page_id' => '21'
-						
+
 					);
 					?>
 					<?php  $wp_query = new WP_Query($args); ?>
@@ -43,21 +43,21 @@
 						<div class="select-block">
 							<div class="select-block_item">
 								<div class="select-title"><?php echo get_field('дата'); ?></div>
-								<select>
+								<select id="date-select" name="dateSelect">
 									<option value="1">01.01.2019</option>
 									<option value="2">02.01.2019</option>
 								</select>
 							</div>
 							<div class="select-block_item">
 								<div class="select-title"><?php echo get_field('время'); ?></div>
-								<select>
+								<select id="time-select" name="timeSelect">
 									<option value="1">20:00</option>
 									<option value="2">21:00</option>
 								</select>
 							</div>
 							<div class="select-block_item">
 								<div class="select-title"><?php echo get_field('количество_мест'); ?></div>
-								<select>
+								<select id="tables" name="tables">
 									<option value="1">1</option>
 									<option value="2">2</option>
 								</select>
@@ -76,10 +76,10 @@
 						<div class="submit-btn">
 							<button class="resevation-btn" type="submit"><?php echo get_field('кнопка'); ?></button>
 						</div>
-						
+
 						<?php }?>
 						<?php wp_reset_query(); ?>
-					
+
 					</form>
 				</div>
 				<div class="modal-thanks">
@@ -98,7 +98,7 @@
 							<?php  $wp_query = new WP_Query($args); ?>
 							<?php  while ( $wp_query->have_posts() ) { ?>
 							<?php $wp_query->the_post(); ?>
-							<?php echo get_field('текст_благодарности'); ?>	
+							<?php echo get_field('текст_благодарности'); ?>
 							<?php }?>
 							<?php wp_reset_query(); ?>
 						</p>

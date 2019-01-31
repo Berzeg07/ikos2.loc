@@ -52,6 +52,9 @@ jQuery(function($) {
 
 
         // send message ============================================================
+        $('.modal-show').click(function(e){
+            e.preventDefault();
+        });
         $(".form-reserv").submit(function() {
             var inpFirst = $(this).find('.inp_first');
             var inpSecond = $(this).find('.inp_second');

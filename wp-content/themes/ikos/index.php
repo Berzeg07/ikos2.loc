@@ -128,9 +128,10 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="gallery-wrap">
+			<div class="container">
 				<h2 class="gallery-title">Ikos Olivia ir vieta, kur piedzimst<br> dzīvesprieks un garšu bauda! </h2>
+			</div>
+			<div class="gallery-wrap">
 				<div class="swiper-container">
 					<div class="slider-line"></div>
 					<div class="swiper-wrapper">
