@@ -355,6 +355,7 @@ textarea {
         display: block;
     }
 }
+
 .header-fixed a {
     font-size: 15px;
     color: #3D3D3D;
@@ -950,6 +951,10 @@ textarea {
     width: 100%;
 }*/
 
+.service-02_wrap{
+    width: 80%;
+    margin-left: auto;    
+}
 .ikos-insideImg,
 .service-02 {
     height: 211px;
@@ -1124,6 +1129,10 @@ textarea {
     height: 100%;
 }
 
+.swiper-container img {
+    width: 100%;
+}
+
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -1179,7 +1188,25 @@ textarea {
 @media (min-width: 992px) {
     .slider-line {
         width: 140px;
-        right: 55px;
+        right: 0.5%;
+        right: 9.5%;
+    }
+}
+
+@media (min-width: 1240px) {
+    .slider-line {
+        right: 5%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .slider-line {
+        right: 7.5%;
+    }
+}
+@media (min-width: 1920px) {
+    .slider-line {
+        right: 9.5%;
     }
 }
 
